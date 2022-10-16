@@ -1,0 +1,233 @@
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, 
+a:active {
+  color: #8c6239;
+}
+
+/* header */
+header {
+  background-color: #dec6af;
+  height: 200px;
+  display: flex;
+  padding-top: 25px;
+}
+
+header h1 {
+  margin: auto;
+  font-size: 30px;
+}
+
+/* nav */
+nav {
+  background-color:#dec6af;
+  text-align: center;
+  border-bottom: #8c6239 dotted 1px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  width :25px;
+  min-width: 90px;
+  flex-grow: 1; 
+}
+
+nav ul li+ li {
+  border-left: #555 0.5px solid;
+}
+
+/* main commin */
+main{
+margin: 0;
+padding: 0;
+}
+
+main section {
+  margin: 60px 10%;
+}
+
+main h2 {
+  border-bottom: #8c6239 solid 2px;
+}
+
+/* main calcutation section */
+.form_and_btn_area {
+  border: #8c6239 dotted 1px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form_area {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.form_box_height,
+.form_box_weight {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_name {
+  margin-right: 20px;
+}
+
+.form_type {
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+}
+
+#height,
+#weight {
+  width: 90%;
+  height: 100%;
+  font-size: 30px;
+}
+
+#btn_area {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 90%;
+}
+
+.btn {
+  width: 30%;
+  height: 100%;
+  padding: 7px;
+}
+
+#getBmi,
+#reset
+{
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(248, 245, 240);
+  width: 100%;
+  height:100%;
+  background-color: #8c6239;
+  border: none;
+  cursor: pointer;
+  box-shadow: #593d21 0 2px 4px;
+}
+
+#getBmi:hover,
+#reset:hover {
+  color: #8c6239;
+  background-color: #ecddcf;
+  border: #8c6239 solid 1px;
+  box-shadow: none;
+}
+
+.result_area {
+  height: 300px;
+  margin-top: 30px;
+  border: #8c6239 dotted 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+#result_area_theme {
+  font-size: 25px;
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result_area_theme p {
+  font-size: 30px;
+  background-color: #dec6af;
+  width: 300px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+#result_bmi_part,
+#result_rank_part {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#result_bmi_box,
+#result_rank_box {
+  width: 155px;
+  height: 55px;
+  border: #555 solid 1px;
+}
+
+/* main table section */
+table {
+  margin-top: 30px;
+  background-color: #dec6af;
+  width: 60%;
+  max-width: 600px;
+  margin: auto;
+}
+
+table, td, th {
+  border: #8c6239 solid 1px ;
+  border-collapse: collapse;
+}
+
+#bmi_1, #bmi_3, #bmi_5, #referance {
+  background-color: #ecddcf;
+}
+
+#referance {
+  text-align: center;
+}
+
+/* main description section */
+.BIMexplanation p::first-letter{
+  color: #8c6239;
+}
+
+/* footer */
+footer {
+  border-top: #8c6239 dotted 1px;
+  background-color: #dec6af;
+  height: 150px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+
+

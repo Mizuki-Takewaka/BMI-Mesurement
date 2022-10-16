@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI計算</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://img.icons8.com/pastel-glyph/344/body-weight-scales.png">
+</head>
+
+<body>
+  <header>
+    <h1>BMI計算</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#calclation">BMI計算</a></li>
+      <li><a href="#table">BMI指標</a></li>
+      <li><a href="#description">BMIとは？</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="calclation" id="calclation">
+      <h2>BMI計算</h2>
+        <p>BMI(ボディマス Body Mass Index:肥満指標)を計算して、あなたの肥満度をチェックしてみましょう。</p>
+
+        <div class="form_and_btn_area">
+          <div id="form_area">
+            <div class="form_box_height">
+              <div class="form_name"><p>身長 ▷</p></div>
+              <div class="form_type">
+                <div><input type="number" id="height" step="0.1"></div>
+                <div><p>cm</p></div>
+              </div>
+            </div>
+          
+            <div class="form_box_weight">
+              <div class="form_name"><p>体重 ▷</p></div>
+              <div class="form_type">
+                <div><input type="number" id="weight" step="0.1"></div>
+                <div><p>kg</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="btn_area">
+            <div class="btn"><input type="button" value="計算する" id="getBmi"></div>
+            <div class="btn"><input type="button" value="リセット" id="reset"></div>
+          </div>
+        </div>
+        
+        <div class="result_area">
+          <div id="result_area_theme">
+            <div id="result_theme"><p>結果</p></div>
+          </div>
+          <div id="result_bmi_part">
+            <p>あなたのBMI値は...</p>  
+            <span id="result_bmi_box"></span>
+          </div>
+          <div id="result_rank_part">
+            <p>肥満度判定...</p>
+            <span id="result_rank_box"></span>
+          </div>
+        </div>
+    </section>
+
+    <section class="table" id="table">
+      <h2>BMI指標</h2>
+      <p>日本が推奨するBMI指標です。</p>
+
+      <table>
+        <caption>
+            - 日本での評価 -
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">BMI</th>
+                <th scope="col">判定</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="bmi_1">
+                <td>18.5未満</td>
+                <td>低体重</td>
+            </tr>
+            <tr id="bmi_2">
+                <td>18.5～25未満</td>
+                <td>普通体重</td>
+            </tr>
+            <tr id="bmi_3">
+                <td>25～30未満</td>
+                <td>肥満（１度）</td>
+            </tr>
+            <tr id="bmi_4">
+                <td>30～35未満</td>
+                <td>肥満（２度）</td>
+            </tr>
+            <tr id="bmi_5">
+                <td>35～40未満</td>
+                <td>肥満（３度）</td>
+            </tr>
+            <tr id="bmi_6">
+                <td>40以上</td>
+                <td>肥満（４度）</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" id="referance">日本肥満学会 2011年9月より</td>
+            </tr>
+        </tfoot>
+      </table>
+    </section>  
+
+    <section class="description" id="description">
+      <h2>BMIとは？</h2>
+        <div class="BIMexplanation">
+          <p>●肥満度を表す指標として国際的に用いられている体格指数で、[体重(kg)]÷[身長(m)の2乗]で求められます。</p>
+          <p>●[体重(kg)]÷[身長(m)の2乗]で算出される値。肥満や低体重（やせ）の判定に用いる。</p>
+          <p>●計算方法は世界共通ですが、肥満の判定基準は国によって異なり、WHO（世界保健機構）の基準では30以上を”Obese”（肥満）としています。</p>
+          <p>●日本肥満学会の定めた基準では18.5未満が「低体重（やせ）」、18.5以上25未満が「普通体重」、25以上が「肥満」で、肥満はその度合いによってさらに「肥満1」から「肥満4」に分類されます。</p>
+          <p>●BMIが22になるときの体重が標準体重で、最も病気になりにくい状態であるとされています。25を超えると脂質異常症や糖尿病、高血圧などの生活習慣病のリスクが2倍以上になり、30を超えると高度な肥満としてより積極的な減量治療を要するものとされています。</p>
+          <p>●なお内臓脂肪の蓄積は必ずしもBMIと相関しないため、メタボリックシンドロームの診断基準には盛りこまれていませんが、メタボリックシンドローム予備軍を拾い上げる意味で特定健診・特定保健指導の基準にはBMIが採用されています。</p>
+        </div>
+        
+        <div class="referance_link">
+          <p>【参考】<a id="referance_link" href="https://www.e-healthnet.mhlw.go.jp/information/dictionary/metabolic/ym-002.html">厚生労働省 e-ヘルスネット</a></p>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#">トップに戻る</a></p>
+    <small>&copy; Mizuki Takewaka</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
